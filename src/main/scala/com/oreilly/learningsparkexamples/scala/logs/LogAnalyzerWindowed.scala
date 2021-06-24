@@ -1,3 +1,4 @@
+/*
 package com.oreilly.learningsparkexamples.scala.logs;
 
 import org.apache.spark._
@@ -44,3 +45,4 @@ object LogAnalyzerWindowed {
     ipCountDStream.print()
   }
 }
+*/

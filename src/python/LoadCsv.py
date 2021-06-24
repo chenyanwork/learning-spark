@@ -29,7 +29,7 @@ def writeRecords(records):
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print "Error usage: LoadCsv [sparkmaster] [inputfile] [outputfile]"
-        sys.exit(-1)
+        sys.sys.exit(-1)
     master = sys.argv[1]
     inputFile = sys.argv[2]
     outputFile = sys.argv[3]

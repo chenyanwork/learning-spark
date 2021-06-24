@@ -8,7 +8,6 @@ package com.oreilly.learningsparkexamples.scala
 import org.apache.spark._
 import play.api.libs.json._
 import play.api.libs.functional.syntax._
-
 object BasicParseJson {
   case class Person(name: String, lovesPandas: Boolean)
   implicit val personReads = Json.format[Person]
@@ -16,7 +15,7 @@ object BasicParseJson {
   def main(args: Array[String]) {
     if (args.length < 3) {
       println("Usage: [sparkmaster] [inputfile] [outputfile]")
-      exit(1)
+      sys.exit(1)
       }
     val master = args(0)
     val inputFile = args(1)

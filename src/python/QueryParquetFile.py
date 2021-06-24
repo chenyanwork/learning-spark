@@ -9,7 +9,7 @@ import sys
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print "Error usage: QueryParquetFile [sparkmaster] [parquetfile]"
-        sys.exit(-1)
+        sys.sys.exit(-1)
     master = sys.argv[1]
     parquetFile = sys.argv[2]
     sc = SparkContext(master, "QueryParquetFile")

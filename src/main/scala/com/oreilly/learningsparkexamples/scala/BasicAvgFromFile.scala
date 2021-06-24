@@ -9,7 +9,7 @@ object BasicAvgFromFile {
     def main(args: Array[String]) {
       if (args.length < 2) {
         println("Usage: [sparkmaster] [inputfile]")
-        exit(1)
+        sys.exit(1)
       }
       val master = args(0)
       val inputFile = args(1)

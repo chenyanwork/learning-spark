@@ -11,7 +11,7 @@ object LoadHive {
   def main(args: Array[String]) {
     if (args.length < 2) {
       println("Usage: [sparkmaster] [tablename]")
-      exit(1)
+      sys.exit(1)
     }
     val master = args(0)
     val tableName = args(1)

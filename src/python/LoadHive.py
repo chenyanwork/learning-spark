@@ -8,7 +8,7 @@ import sys
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print "Error usage: LoadHive [sparkmaster] [inputtable]"
-        sys.exit(-1)
+        sys.sys.exit(-1)
     master = sys.argv[1]
     inputTable = sys.argv[2]
     sc = SparkContext(master, "LoadHive")

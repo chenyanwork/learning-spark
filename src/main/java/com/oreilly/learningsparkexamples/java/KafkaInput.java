@@ -32,7 +32,7 @@ public final class KafkaInput {
     input.print();
     // start our streaming context and wait for it to "finish"
     jssc.start();
-    // Wait for 10 seconds then exit. To run forever call without a timeout
+    // Wait for 10 seconds then sys.exit. To run forever call without a timeout
     jssc.awaitTermination(10000);
     // Stop the streaming context
     jssc.stop();

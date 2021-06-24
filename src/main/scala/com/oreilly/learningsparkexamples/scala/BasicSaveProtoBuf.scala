@@ -1,3 +1,4 @@
+/*
 /**
  * Saves a sequence file of people and how many pandas they have seen.
  */
@@ -34,3 +35,4 @@ object BasicSaveProtoBuf {
         classOf[LzoProtobufBlockOutputFormat[ProtobufWritable[Places.Venue]]], conf)
     }
 }
+*/

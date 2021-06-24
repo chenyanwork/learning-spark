@@ -20,7 +20,7 @@ object WordCount {
       val words = input.flatMap(line => line.split(" "))
       args.length match {
         case x: Int if x > 2 => {
-          val counts = words.map(word => (word, 1)).reduceByKey{case (x,y) => x + y}
+          val counts = words.map(word => (word, 1)).reduceByKey{(x,y) => x + y}
           counts.saveAsTextFile(args(2))
         }
         case _ => {

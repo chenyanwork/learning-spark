@@ -10,7 +10,7 @@ object BasicAvgFromFiles {
     def main(args: Array[String]) {
       if (args.length < 3) {
         println("Usage: [sparkmaster] [inputdirectory] [outputdirectory]")
-        exit(1)
+        sys.exit(1)
       }
       val master = args(0)
       val inputFile = args(1)

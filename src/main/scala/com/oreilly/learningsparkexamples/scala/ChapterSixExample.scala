@@ -65,7 +65,7 @@ object ChapterSixExample {
       contactCounts.saveAsTextFile(outputDir + "/output.txt")
     } else {
       println(s"Too many errors ${invalidSignCount.value} for ${validSignCount.value}")
-      exit(1)
+      sys.exit(1)
     }
     // Lookup the countries for each call sign for the
     // contactCounts RDD.  We load an array of call sign

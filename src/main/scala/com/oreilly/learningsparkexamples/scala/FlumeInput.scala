@@ -1,3 +1,4 @@
+/*
 /**
  * Illustrates a basic Flume stream
  */
@@ -23,9 +24,10 @@ object FlumeInput {
     lines.print()
     // start our streaming context and wait for it to "finish"
     ssc.start()
-    // Wait for 10 seconds then exit. To run forever call without a timeout
+    // Wait for 10 seconds then sys.exit. To run forever call without a timeout
     ssc.awaitTermination(10000)
     ssc.stop()
     println("Done")
   }
 }
+*/

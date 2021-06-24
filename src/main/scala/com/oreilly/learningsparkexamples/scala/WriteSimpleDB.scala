@@ -14,7 +14,7 @@ object WriteSimpleDB {
   def main(args: Array[String]) {
     if (args.length < 1) {
       println("Usage: [sparkmaster]")
-      exit(1)
+      sys.exit(1)
     }
     val master = args(0)
     val sc = new SparkContext(master, "WriteSimpleJdbc", System.getenv("SPARK_HOME"))

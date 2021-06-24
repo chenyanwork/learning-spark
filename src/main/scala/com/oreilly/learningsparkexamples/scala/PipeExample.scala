@@ -1,3 +1,4 @@
+/*
 /**
  * Illustrates a simple use of pipe to call a perl program from Spark
  */
@@ -27,3 +28,4 @@ object PipeExample {
       println(result.mkString(" "))
     }
 }
+*/

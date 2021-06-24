@@ -1,3 +1,4 @@
+/*
 /**
  * Illustrates a simple map partition to parse JSON data in Scala
  * Loads the data into a case class with the name and a boolean flag
@@ -16,7 +17,7 @@ object LoadJsonWithElephantBird {
   def main(args: Array[String]) {
     if (args.length < 2) {
       println("Usage: [sparkmaster] [inputfile]")
-      exit(1)
+      sys.exit(1)
     }
     val master = args(0)
     val inputFile = args(1)
@@ -36,3 +37,4 @@ object LoadJsonWithElephantBird {
     println(input.collect().toList)
     }
 }
+*/
